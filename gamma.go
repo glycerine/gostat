@@ -2,13 +2,13 @@
 // k > 0		shape parameter
 // θ (Theta) > 0	scale parameter
 
-package stat
+package gostat
 
 import (
 	"fmt"
 	"math"
 
-	. "github.com/ematvey/go-fn/fn"
+	. "github.com/glycerine/gostat/fn"
 )
 
 /* did not pass test, so commented out
@@ -41,7 +41,7 @@ func Gamma_LnPDF(α float64, λ float64) func(x float64) float64 {
 		if x < 0 {
 			return negInf
 		}
-		return expPart(x) + (α-1)*log(λ*x) - LnΓ(α)
+		return expPart(x) + (α-1)*log(λ*x) - LnGamma(α)
 	}
 }
 

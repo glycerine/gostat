@@ -1,7 +1,7 @@
-package stat
+package gostat
 
 import (
-	. "github.com/ematvey/go-fn/fn"
+	. "github.com/glycerine/gostat/fn"
 )
 
 func Multinomial_PMF(θ []float64, n int64) func(x []int64) float64 {
@@ -32,13 +32,13 @@ func Multinomial_LnPMF(θ []float64, n int64) func(x []int64) float64 {
 		totalx := iZero
 		for i := 0; i < len(x); i++ {
 			l += log(θ[i]) * float64(x[i])
-			l -= LnΓ(float64(x[i] + 1))
+			l -= LnGamma(float64(x[i] + 1))
 			totalx += x[i]
 		}
 		if totalx != n {
 			return negInf
 		}
-		l += LnΓ(float64(totalx + 1))
+		l += LnGamma(float64(totalx + 1))
 		return l
 	}
 }

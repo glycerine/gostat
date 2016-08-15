@@ -1,7 +1,7 @@
-package stat
+package gostat
 
 import (
-	. "github.com/ematvey/go-fn/fn"
+	. "github.com/glycerine/gostat/fn"
 )
 
 func Dirichlet_PDF(α []float64) func(θ []float64) float64 {
@@ -35,10 +35,10 @@ func Dirichlet_LnPDF(α []float64) func(x []float64) float64 {
 				return negInf
 			}
 			l += (α[i] - 1) * log(x[i])
-			l -= LnΓ(α[i])
+			l -= LnGamma(α[i])
 			totalα += α[i]
 		}
-		l += LnΓ(totalα)
+		l += LnGamma(totalα)
 		return l
 	}
 }

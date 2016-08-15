@@ -1,7 +1,7 @@
-package stat
+package gostat
 
 import (
-	. "github.com/ematvey/go-fn/fn"
+	. "github.com/glycerine/gostat/fn"
 )
 
 func StudentsT_PDF(ν float64) func(x float64) float64 {
@@ -11,7 +11,7 @@ func StudentsT_PDF(ν float64) func(x float64) float64 {
 	}
 }
 func StudentsT_LnPDF(ν float64) func(x float64) float64 {
-	normalization := LnΓ((ν+1)/2) - log(sqrt(ν*π)) - LnΓ(ν/2)
+	normalization := LnGamma((ν+1)/2) - log(sqrt(ν*π)) - LnGamma(ν/2)
 	return func(x float64) float64 {
 		return normalization + log(1+x*x/ν)*-(ν+1)/2
 	}

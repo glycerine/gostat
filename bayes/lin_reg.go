@@ -7,7 +7,7 @@ package bayes
 import (
 	"fmt"
 
-	"github.com/ematvey/gostat"
+	"github.com/glycerine/zettalm/gostat"
 
 	mx "gomatrix.googlecode.com/hg/matrix"
 )

@@ -1,9 +1,9 @@
 // Chi-Squared distribution
 
-package stat
+package gostat
 
 import (
-	. "github.com/ematvey/go-fn/fn"
+	. "github.com/glycerine/gostat/fn"
 )
 
 func Xsquare_PDF(n int64) func(x float64) float64 {
@@ -16,7 +16,7 @@ func Xsquare_PDF(n int64) func(x float64) float64 {
 
 func Xsquare_LnPDF(n int64) func(x float64) float64 {
 	k := float64(n) / 2
-	normalization := log(0.5)*k - LnΓ(k)
+	normalization := log(0.5)*k - LnGamma(k)
 	return func(x float64) float64 {
 		return normalization + log(x)*(k-1) - x/2
 	}

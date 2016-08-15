@@ -1,4 +1,4 @@
-package stat
+package gostat
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/ematvey/go-fn/fn"
+	. "github.com/glycerine/gostat/fn"
 )
 
 var Seed func(int64) = rand.Seed
@@ -44,7 +44,7 @@ func TestLnGamma(t *testing.T) {
 	}
 	for i := 0; i < 100; i++ {
 		x := NextGamma(10, 10)
-		g1 := LnΓ(x)
+		g1 := LnGamma(x)
 		g2, _ := math.Lgamma(x)
 		if !check(g1, g2) {
 			t.Error(fmt.Sprintf("For %v: %v vs %v", x, g1, g2))
@@ -65,7 +65,7 @@ func TestLnGamma(t *testing.T) {
 	start = time.Now()
 	for i := 0; i < 1e6; i++ {
 		x := NextGamma(10, 10)
-		LnΓ(x)
+		LnGamma(x)
 	}
 	now = time.Now()
 	duration1 := float64(now.Sub(start)) / 1e9

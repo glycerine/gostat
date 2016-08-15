@@ -1,7 +1,7 @@
-package stat
+package gostat
 
 import (
-	. "github.com/ematvey/go-fn/fn"
+	. "github.com/glycerine/gostat/fn"
 )
 
 // Probability Mass Function for the Binomial distribution
@@ -22,7 +22,7 @@ func Binomial_PMF_At(ρ float64, n, k int64) float64 {
 func Binomial_LnPMF(ρ float64, n int64) func(i int64) float64 {
 	return func(i int64) float64 {
 		p := log(ρ)*float64(i) + log(1-ρ)*float64(n-i)
-		p += LnΓ(float64(n+1)) - LnΓ(float64(i+1)) - LnΓ(float64(n-i+1))
+		p += LnGamma(float64(n+1)) - LnGamma(float64(i+1)) - LnGamma(float64(n-i+1))
 		return p
 	}
 }

@@ -1,12 +1,12 @@
 // Beta distribution
 
-package stat
+package gostat
 
 import (
 	"fmt"
 	"math"
 
-	. "github.com/ematvey/go-fn/fn"
+	. "github.com/glycerine/gostat/fn"
 )
 
 func bisect(x, p, a, b, xtol, ptol float64) float64 {
@@ -126,7 +126,7 @@ func Beta_CDF(α float64, β float64) func(x float64) float64 {
 	return func(x float64) float64 {
 		//func Beta_CDF(α , β , x float64) float64 {
 		var y, res float64
-		y = math.Exp(LnΓ(α+β) - LnΓ(α) - LnΓ(β) + α*math.Log(x) + β*math.Log(1.0-x))
+		y = math.Exp(LnGamma(α+β) - LnGamma(α) - LnGamma(β) + α*math.Log(x) + β*math.Log(1.0-x))
 		switch {
 		case x == 0:
 			res = 0.0
@@ -198,9 +198,9 @@ func cdf_beta_Pinv(α float64, β float64, p float64) float64 {
 	if p < 0.1 {
 		 // small x
 
-		lg_ab = LnΓ(α + β)
-		lg_a = LnΓ(α)
-		lg_b = LnΓ(β)
+		lg_ab = LnGamma(α + β)
+		lg_a = LnGamma(α)
+		lg_b = LnGamma(β)
 		lx = (math.Log(α) + lg_a + lg_b - lg_ab + math.Log(p)) / α
 		if lx <= 0 {
 			x = math.Exp(lx)              // first approximation

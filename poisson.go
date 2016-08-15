@@ -1,11 +1,11 @@
 // Poisson distribution
 
-package stat
+package gostat
 
 import (
 	"math"
 
-	. "github.com/ematvey/go-fn/fn"
+	. "github.com/glycerine/gostat/fn"
 )
 
 /*
@@ -16,7 +16,7 @@ func Poisson_LnPMF(λ float64) (foo func(i int64) float64) {
 		//p = -λ +log(λ)*float64(i)
 		//x := log(Γ(float64(i)+1))
 		//_ = x
-		//p -= LnΓ(float64(i)+1)
+		//p -= LnGamma(float64(i)+1)
 		//return p
 	}
 }

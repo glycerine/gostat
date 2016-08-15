@@ -1,6 +1,6 @@
 // Uniform (Flat) distribution
 
-package stat
+package gostat
 
 import (
 	"math/rand"

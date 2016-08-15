@@ -1,11 +1,11 @@
 // Negative Binomial distribution
 
-package stat
+package gostat
 
 import (
 	"math"
 
-	. "github.com/ematvey/go-fn/fn"
+	. "github.com/glycerine/gostat/fn"
 )
 
 /*

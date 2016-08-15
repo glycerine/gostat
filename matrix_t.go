@@ -1,10 +1,10 @@
-package stat
+package gostat
 
 import (
 	"fmt"
 	"math"
 
-	. "github.com/ematvey/go-fn/fn"
+	. "github.com/glycerine/gostat/fn"
 	mx "github.com/skelterjohn/go.matrix"
 )
 

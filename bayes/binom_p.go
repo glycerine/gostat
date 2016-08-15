@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"math"
 
-	s "github.com/ematvey/gostat"
+	s "github.com/glycerine/zettalm/gostat"
 )
 
 // Quantile, Flat prior

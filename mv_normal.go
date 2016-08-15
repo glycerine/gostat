@@ -1,4 +1,4 @@
-package stat
+package gostat
 
 import (
 	. "github.com/skelterjohn/go.matrix"

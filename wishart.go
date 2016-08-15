@@ -1,7 +1,7 @@
-package stat
+package gostat
 
 import (
-	. "github.com/ematvey/go-fn/fn"
+	. "github.com/glycerine/gostat/fn"
 	m "github.com/skelterjohn/go.matrix"
 )
 
@@ -25,7 +25,7 @@ func Wishart_LnPDF(n int, V *m.DenseMatrix) func(W *m.DenseMatrix) float64 {
 	Vinv, _ := V.Inverse()
 	normalization := log(2)*(-0.5*float64(n*p)) +
 		log(Vdet)*(-0.5*float64(n)) -
-		LnΓ(0.5*float64(n))
+		LnGamma(0.5*float64(n))
 	return func(W *m.DenseMatrix) float64 {
 		VinvW, _ := Vinv.Times(W)
 		return normalization +
@@ -71,7 +71,7 @@ func InverseWishart_LnPDF(n int, Ψ *m.DenseMatrix) func(W *m.DenseMatrix) float
 	Ψdet := Ψ.Det()
 	normalization := log(Ψdet)*-0.5*float64(n) +
 		log(2)*-0.5*float64(n*p) -
-		LnΓ(float64(n)/2)
+		LnGamma(float64(n)/2)
 	return func(B *m.DenseMatrix) float64 {
 		Bdet := B.Det()
 		Binv, _ := B.Inverse()

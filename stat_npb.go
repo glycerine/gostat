@@ -1,7 +1,7 @@
-package stat
+package gostat
 
 import (
-	. "github.com/ematvey/go-fn/fn"
+	. "github.com/glycerine/gostat/fn"
 )
 
 func CRP_PMF(α float64) func(x []int64) float64 {
@@ -43,10 +43,10 @@ func CRP_LnPMF(α float64) func(x []int64) float64 {
 			total++
 		}
 		ll := r * log(α)
-		ll += LnΓ(α) - LnΓ(α+total)
+		ll += LnGamma(α) - LnGamma(α+total)
 		for _, count := range counts {
 			if count != 0 {
-				ll += LnΓ(count)
+				ll += LnGamma(count)
 			}
 		}
 		return ll

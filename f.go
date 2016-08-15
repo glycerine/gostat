@@ -1,10 +1,10 @@
 // F-distribution, alias Fisher-Snedecor distribution
-package stat
+package gostat
 
 import (
 	"fmt"
 
-	. "github.com/ematvey/go-fn/fn"
+	. "github.com/glycerine/gostat/fn"
 )
 
 func F_PDF(d1 float64, d2 float64) func(x float64) float64 {

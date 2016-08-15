@@ -15,7 +15,7 @@ vard_post = a1_post*b1_post/SQR(a1_post+b1_post)*(a1_post+b1_post+1)  +  a2_post
 
 package bayes
 
-import s "github.com/ematvey/gostat"
+import s "github.com/glycerine/zettalm/gostat"
 
 /*
 Mean of posterior distribution of unknown difference of binomial proportions, approximated by Normal distribution

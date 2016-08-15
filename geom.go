@@ -1,4 +1,4 @@
-package stat
+package gostat
 
 func Geometric_PMF(ρ float64) func(i int64) float64 {
 	return func(n int64) float64 { return ρ * pow(ρ, float64(n)) }
