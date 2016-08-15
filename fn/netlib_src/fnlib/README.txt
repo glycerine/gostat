@@ -116,7 +116,9 @@ References
 
 Further reading
 
-Walter H. Vandevender, Karen H. Haskell, The SLATEC mathematical subroutine library, ACM SIGNUM Newsletter, Volume 17 Issue 3, September 1982 doi:10.1145/1057594.1057595
+Walter H. Vandevender, Karen H. Haskell, The SLATEC mathematical
+subroutine library, ACM SIGNUM Newsletter, Volume 17 Issue 3,
+September 1982 doi:10.1145/1057594.1057595
 
 External links
 
@@ -125,7 +127,9 @@ SLATEC information at GAMS [http://gams.nist.gov/serve.cgi/Package/SLATEC/]
 
 -----
 
-"It is axiomatic that material in the public domain is not protected by copyright, even when incorporated into a copyrighted work."
+"It is axiomatic that material in the public domain is not
+protected by copyright, even when incorporated into a
+copyrighted work."
 
 from https://en.wikipedia.org/wiki/Public_domain
 
@@ -134,21 +138,34 @@ from https://en.wikipedia.org/wiki/Public_domain
 
 Government works
 
-Works of the United States Government and various other governments are excluded from copyright law and may therefore be considered to be in the public domain in their respective countries.[39] In the United States, when copyrighted material is enacted into the law, it enters the public domain. Thus, e.g., the building codes, when enacted, are in the public domain.[40] They may also be in the public domain in other countries as well. "It is axiomatic that material in the public domain is not protected by copyright, even when incorporated into a copyrighted work."[41]
+Works of the United States Government and various other governments
+are excluded from copyright law and may therefore be considered to
+be in the public domain in their respective countries.[39] In the
+United States, when copyrighted material is enacted into the law,
+it enters the public domain. Thus, e.g., the building codes, when
+enacted, are in the public domain.[40] They may also be in the
+public domain in other countries as well. "It is axiomatic
+that material in the public domain is not protected by copyright,
+even when incorporated into a copyrighted work."[41]
 
 ...
 
 [39] Copyright Office Basics [http://www.copyright.gov/circs/circ01.pdf]
 
-[40]  "Veeck v. Southern Building Code Congress Int'l, Inc./Opinion of the Court – Wikisource". en.wikisource.org. Retrieved 15 March 2012. [http://en.wikisource.org/wiki/Veeck_v._Southern_Building_Code_Congress_Int'l,_Inc./Opinion_of_the_Court]
+[40]  "Veeck v. Southern Building Code Congress Int'l, Inc./Opinion of
+the Court – Wikisource". en.wikisource.org. Retrieved 15 March 2012.
+[http://en.wikisource.org/wiki/Veeck_v._Southern_Building_Code_Congress_Int'l,_Inc./Opinion_of_the_Court]
 
-[41]  Nimmer, Melville B., and David Nimmer (1997). Nimmer on Copyright, section 13.03(F)(4). Albany: Matthew Bender. [https://en.wikipedia.org/wiki/Nimmer_on_Copyright]
+[41]  Nimmer, Melville B., and David Nimmer (1997). Nimmer on Copyright,
+section 13.03(F)(4). Albany: Matthew Bender.
+[https://en.wikipedia.org/wiki/Nimmer_on_Copyright]
 
 """
 
 -----
 
-From page 2 of "United States Copyright Office: Copyright in Derative Works and Compilations"
+From page 2 of "United States Copyright Office: Copyright in
+Derative Works and Compilations"
 
 http://www.copyright.gov/circs/circ14.pdf
 
