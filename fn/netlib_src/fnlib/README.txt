@@ -124,6 +124,55 @@ SLATEC source code [http://www.netlib.org/slatec/]
 SLATEC information at GAMS [http://gams.nist.gov/serve.cgi/Package/SLATEC/]
 
 -----
+
+"It is axiomatic that material in the public domain is not protected by copyright, even when incorporated into a copyrighted work."
+
+from https://en.wikipedia.org/wiki/Public_domain
+
+"""
+...
+
+Government works
+
+Works of the United States Government and various other governments are excluded from copyright law and may therefore be considered to be in the public domain in their respective countries.[39] In the United States, when copyrighted material is enacted into the law, it enters the public domain. Thus, e.g., the building codes, when enacted, are in the public domain.[40] They may also be in the public domain in other countries as well. "It is axiomatic that material in the public domain is not protected by copyright, even when incorporated into a copyrighted work."[41]
+
+...
+
+[39] Copyright Office Basics [http://www.copyright.gov/circs/circ01.pdf]
+
+[40]  "Veeck v. Southern Building Code Congress Int'l, Inc./Opinion of the Court – Wikisource". en.wikisource.org. Retrieved 15 March 2012. [http://en.wikisource.org/wiki/Veeck_v._Southern_Building_Code_Congress_Int'l,_Inc./Opinion_of_the_Court]
+
+[41]  Nimmer, Melville B., and David Nimmer (1997). Nimmer on Copyright, section 13.03(F)(4). Albany: Matthew Bender. [https://en.wikipedia.org/wiki/Nimmer_on_Copyright]
+
+"""
+
+-----
+
+From page 2 of "United States Copyright Office: Copyright in Derative Works and Compilations"
+
+http://www.copyright.gov/circs/circ14.pdf
+
+Copyright Protection in Derivative Works
+
+The copyright in a derivative work covers only the additions,
+changes, or other new material appearing for the first time
+in the work. Protection does not extend to any preexisting
+material, that is, previously published or previously registered
+works or works in the public domain or owned by a
+third party.
+
+As a result, it is not possible to extend the length of
+protection for a copyrighted work by creating a derivative
+work. A work that has fallen into the public domain, that is,
+a work that is no longer protected by copyright, is also an
+underlying “work” from which derivative authorship may
+be added, but the copyright in the derivative work will not
+extend to the public domain material, and the use of the
+public domain material in a derivative work will not prevent
+anyone else from using the same public domain work for
+another derivative work.
+
+-----
 contents, from: http://www.netlib.org/slatec/fnlib/
 
 file    acosh.f  acosh.f plus dependencies
