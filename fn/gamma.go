@@ -37,6 +37,16 @@ func IΓ(s, x float64) float64 {
 //	return IGamC(s, x) * Γ(s)
 //}
 
+func IΓ(s, x float64) float64 {
+	// rewrite using the new code in igamma.go
+	//return IGamC(s, x) * Γ(s)
+	val, converged := UpperIncompleteGamma(s, x)
+	if !converged {
+		panic("UpperIncompleteGamma(s,x) did not converge")
+	}
+	return val
+}
+
 //Upper incomplete Gamma function for integer s only
 func IΓint(s int64, x float64) float64 {
 	if s < 0 {
@@ -61,6 +71,14 @@ func Iγ(s, x float64) float64 {
 		return 1
 	}
 	return IGam(s, x) * Γ(s)
+
+	// https://en.wikipedia.org/wiki/Incomplete_gamma_function can be computed as:
+	// math.Exp(GAMMALN(s)) * GAMMA.DIST(x,s,beta=1,TRUE)
+	// where
+	//       GAMMA.DIST: If beta = 1, GAMMA.DIST returns the standard gamma distribution.
+	//   and GAMMA.DIST: last param TRUE => cumulative distribution function
+	// and where
+	//       GAMMALN(s): Returns the natural logarithm of the gamma function, Γ(x).
 }
 
 //Lower incomplete Gamma function for integer s only
